@@ -20,6 +20,10 @@
 ; Ignore RN jest
 <PROJECT_ROOT>/node_modules/react-native/.*
 
+; Ignore Example
+<PROJECT_ROOT>/example/*
+
+
 [include]
 <PROJECT_ROOT>/node_modules/react-native/Libraries/StyleSheet/StyleSheetTypes
 
