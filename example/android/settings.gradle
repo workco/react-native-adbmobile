@@ -1,3 +1,5 @@
 rootProject.name = 'RNADBMobileExample'
+include ':react-native-adbmobile'
+project(':react-native-adbmobile').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-adbmobile/android')
 
 include ':app'
