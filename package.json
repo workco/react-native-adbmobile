@@ -1,0 +1,54 @@
+{
+  "name": "react-native-adbmobile",
+  "version": "0.1.0",
+  "repository": "https://github.com/workco/react-native-adbmobile",
+  "license": "MIT",
+  "private": true,
+  "description": "React-Native support for ADBMobile (Adobe Mobile Services)",
+  "author": "Gustavo Sverzut Barbieri <barbieri@work.co>",
+  "main": "lib/index.js",
+  "keywords": [
+    "react-native",
+    "adobe",
+    "adbmobile",
+    "analytics",
+    "target",
+    "campaign",
+    "audience"
+  ],
+  "scripts": {
+    "lint": "node_modules/.bin/eslint . --max-warnings=0 src/",
+    "flow": "flow",
+    "flow-update": "flow-typed install -s --overwrite",
+    "precommit": "yarn lint && yarn flow",
+    "prepush": "yarn lint && yarn flow",
+    "prepare": "rm -fr lib flow && mkdir lib flow && babel src/ -d lib/ && flow gen-flow-files src/index.js > flow/react-native-adbmobile.js"
+  },
+  "peerDependencies": {
+    "react": "^16.2.0",
+    "react-native": "^0.53.3"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.2.2",
+    "babel-plugin-module-resolver": "^3.1.0",
+    "babel-preset-flow": "^6.23.0",
+    "babel-preset-react-native": "^4.0.0",
+    "eslint": "^4.18.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-import-resolver-babel-module": "^4.0.0",
+    "eslint-plugin-flowtype": "^2.46.1",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-prettier": "^2.6.0",
+    "eslint-plugin-react": "^7.7.0",
+    "eslint-plugin-react-native": "^3.2.1",
+    "flow-bin": "^0.66.0",
+    "flow-typed": "^2.3.0",
+    "prettier": "^1.10.2",
+    "react": "^16.2.0",
+    "react-native": "^0.53.3"
+  }
+}
