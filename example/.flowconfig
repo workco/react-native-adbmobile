@@ -20,6 +20,9 @@
 ; Ignore RN jest
 <PROJECT_ROOT>/node_modules/react-native/.*
 
+; Ignore RNADBMobile node_modules (no PROJECT_ROOT since I usually 'yarn link')
+.*/react-native-adbmobile/node_modules/.*
+
 [include]
 <PROJECT_ROOT>/node_modules/react-native/Libraries/StyleSheet/StyleSheetTypes
 
