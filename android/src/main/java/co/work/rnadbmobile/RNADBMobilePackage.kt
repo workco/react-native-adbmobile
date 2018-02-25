@@ -18,7 +18,8 @@ class RNADBMobilePackage : ReactPackage {
     override fun createNativeModules(reactContext: ReactApplicationContext): List<NativeModule> {
         val modules = ArrayList<NativeModule>()
 
-        modules.add(RNADBMobileModule(reactContext))
+        modules.add(RNADBMobileConfig(reactContext))
+        modules.add(RNADBMobileAnalytics(reactContext))
 
         return modules
     }

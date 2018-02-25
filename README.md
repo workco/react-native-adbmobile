@@ -39,14 +39,55 @@ Manager.
       compile project(':react-native-adbmobile')
   	```
 
+## Configuration
+
+### Android
+
+Follow
+[Download the SDK](https://marketing.adobe.com/resources/help/en_US/mobile/android/requirements.html)
+instructions, we're particularly interested in the `ADBMobileConfig.json`,
+since is automatically handled by Gradle.
+
+Then add the `ADBMobileConfig.json` file to the
+`android/app/src/main/assets` folder in your Application.
+
+The following permissions are required in your
+`android/app/src/main/AndroidManifest.xml`:
+```xml
+<uses-permission android:name="android.permission.INTERNET" />
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+```
+
+Life cycle metrics are implemented using React Native's context.
+If other activities exist, then follow the instructions at
+[Adobe Cloud Center Help: Implement Lifecycle Metrics](https://marketing.adobe.com/resources/help/en_US/mobile/android/dev_qs.html)
+to ensure accurate crash reporting.
 
 ## Usage
 ```javascript
-import RNADBMobile from 'react-native-adbmobile';
+import { Config, Analytics } from 'react-native-adbmobile';
 
-// TODO: What to do with the module?
-RNADBMobile;
+// Setters do not return a value, neither throw errors
+Config.setPrivacyStatus(Config.MobilePrivacyStatus.optIn);
+
+// Getters are promises
+Config.getUserIdentifier().then(userIdentifier => console.log(userIdentifier));
+
+// Tracking takes an optional 'contextData' as last parameter.
+// It's an object to basic types (string, number, boolean)
+// or array/object of those.
+Analytics.trackAction('anAction')
+Analytics.trackState('aState', { key: 'value' })
 ```
+
+## Development
+
+### Android
+
+Open `android/` using Android Studio.
+
+### iOS
+
 
 # References
  - [Adobe Mobile Services Help](https://marketing.adobe.com/resources/help/en_US/mobile/)

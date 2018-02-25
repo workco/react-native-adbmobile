@@ -1,6 +1,7 @@
 
 buildscript {
     ext.kotlin_version = '1.2.21'
+    ext.adobe_mobile_version = '4.14.0'
 
     repositories {
         jcenter()
@@ -35,9 +36,14 @@ android {
 repositories {
     mavenCentral()
     google()
+    maven {
+        // All of React Native (JS, Obj-C sources, Android binaries) is installed from npm
+        url "$rootDir/../node_modules/react-native/android"
+    }
 }
 
 dependencies {
     implementation 'com.facebook.react:react-native:+'
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+    implementation "com.adobe.mobile:adobeMobileLibrary:$adobe_mobile_version"
 }

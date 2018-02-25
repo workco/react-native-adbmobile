@@ -22,7 +22,7 @@
     "flow-update": "flow-typed install -s --overwrite",
     "precommit": "yarn lint && yarn flow",
     "prepush": "yarn lint && yarn flow",
-    "prepare": "rm -fr lib flow && mkdir lib flow && babel src/ -d lib/ && flow gen-flow-files src/index.js > flow/react-native-adbmobile.js"
+    "prepare": "rm -fr lib flow && mkdir lib flow && babel src/ -d lib/"
   },
   "peerDependencies": {
     "react": "^16.2.0",
