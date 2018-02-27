@@ -138,6 +138,10 @@ acorn@^5.0.0, acorn@^5.3.0, acorn@^5.5.0:
   version "5.5.3"
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-5.5.3.tgz#f473dd47e0277a08e28e9bec5aeeb04751f0b8c9"
 
+adobe-mobile-services@^4.13.1-cor:
+  version "4.13.1-cor"
+  resolved "https://registry.yarnpkg.com/adobe-mobile-services/-/adobe-mobile-services-4.13.1-cor.tgz#7a14d7f0a6a4dd6da4fb5cb766245a136a2ac899"
+
 ajv-keywords@^2.1.0:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/ajv-keywords/-/ajv-keywords-2.1.1.tgz#617997fc5f60576894c435f940d819e135b80762"
