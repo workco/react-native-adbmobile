@@ -13,8 +13,11 @@ Pod::Spec.new do |s|
   s.author       = { "Gustavo Sverzut Barbieri" => "barbieri@work.co" }
   s.platform     = :ios, "8.0"
   s.source       = { :git => "https://github.com/workco/react-native-adbmobile.git", :tag => "master" }
-  s.source_files = "*.{swift,h,m}"
+  s.source_files = "*.{h,m}"
   s.requires_arc = true
 
+  s.frameworks   = "CoreLocation"
+
   s.dependency     "React"
+  s.dependency     "AdobeMobileSDK", "~> 4.15"
 end

@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		ECA22B992040615F00E05469 /* RNADBMobileModule.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA22B982040615F00E05469 /* RNADBMobileModule.m */; };
+		ECD52D182051DF86002882C1 /* RNADBMobile.h in Headers */ = {isa = PBXBuildFile; fileRef = ECEF5C272051DE89000A73F8 /* RNADBMobile.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		ECD52D192051DF8F002882C1 /* RNADBMobileConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = EC31B049205193FE00C6D5D8 /* RNADBMobileConfig.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		ECD52D1A2051DF8F002882C1 /* RNADBMobileAnalytics.h in Headers */ = {isa = PBXBuildFile; fileRef = EC31B046205193CA00C6D5D8 /* RNADBMobileAnalytics.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		ECEF5C252051DE2C000A73F8 /* RNADBMobileConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = EC31B047205193ED00C6D5D8 /* RNADBMobileConfig.m */; };
+		ECEF5C262051DE2C000A73F8 /* RNADBMobileAnalytics.m in Sources */ = {isa = PBXBuildFile; fileRef = EC31B044205193A900C6D5D8 /* RNADBMobileAnalytics.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -123,36 +127,40 @@
 			remoteGlobalIDString = 9936F32F1F5F2E5B0010BF04;
 			remoteInfo = "privatedata-tvOS";
 		};
-		EC0691592040AC0F0040E4E4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EC0691262040AAF30040E4E4 /* React.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 83CBBA2D1A601D0E00E9B192;
-			remoteInfo = React;
-		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		58B511D91A9E6C8500147676 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "include/$(PRODUCT_NAME)";
-			dstSubfolderSpec = 16;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		134814201AA4EA6300B7C361 /* libRNADBMobile.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNADBMobile.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC0691262040AAF30040E4E4 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
-		EC597A6020518E720021EBAB /* RNADBMobileModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNADBMobileModule.h; sourceTree = "<group>"; };
-		ECA22B982040615F00E05469 /* RNADBMobileModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNADBMobileModule.m; sourceTree = "<group>"; };
+		EC31B044205193A900C6D5D8 /* RNADBMobileAnalytics.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNADBMobileAnalytics.m; sourceTree = "<group>"; };
+		EC31B046205193CA00C6D5D8 /* RNADBMobileAnalytics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNADBMobileAnalytics.h; sourceTree = "<group>"; };
+		EC31B047205193ED00C6D5D8 /* RNADBMobileConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNADBMobileConfig.m; sourceTree = "<group>"; };
+		EC31B049205193FE00C6D5D8 /* RNADBMobileConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNADBMobileConfig.h; sourceTree = "<group>"; };
+		ECA0F9342051A21E003CD350 /* libReact.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libReact.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECD52D172051DF1E002882C1 /* libReact.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libReact.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECD52D1C2051DFFC002882C1 /* libyoga.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libyoga.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECD52D1E2051E045002882C1 /* libcxxreact.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libcxxreact.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECD52D202051E058002882C1 /* libdouble-conversion.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libdouble-conversion.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECD52D2F2051E0DD002882C1 /* libReact.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libReact.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECD52D372051E0F9002882C1 /* libcxxreact.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libcxxreact.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECD52D382051E0F9002882C1 /* libdouble-conversion.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libdouble-conversion.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECD52D392051E0F9002882C1 /* libjschelpers.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libjschelpers.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECD52D3A2051E0F9002882C1 /* libjsinspector.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libjsinspector.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECD52D3B2051E0F9002882C1 /* libprivatedata.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libprivatedata.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECD52D3C2051E0F9002882C1 /* libthird-party.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libthird-party.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECD52D3D2051E0F9002882C1 /* libyoga.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libyoga.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECD52D3E2051E127002882C1 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		ECD89DCD2051E5CE00A09E5C /* libReact.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libReact.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECD89DCE2051E5EA00A09E5C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		ECD89DD12051E69200A09E5C /* libcxxreact.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libcxxreact.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECEF5C192051DDC3000A73F8 /* RNADBMobile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RNADBMobile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECEF5C1B2051DDC3000A73F8 /* RNADBMobile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNADBMobile.h; sourceTree = "<group>"; };
+		ECEF5C1C2051DDC4000A73F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECEF5C212051DDEB000A73F8 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		ECEF5C272051DE89000A73F8 /* RNADBMobile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNADBMobile.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		58B511D81A9E6C8500147676 /* Frameworks */ = {
+		ECEF5C152051DDC3000A73F8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -165,7 +173,6 @@
 		134814211AA4EA7D00B7C361 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				134814201AA4EA6300B7C361 /* libRNADBMobile.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -173,6 +180,24 @@
 		26D89C324E3164BDBC33E242 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				ECD89DD12051E69200A09E5C /* libcxxreact.a */,
+				ECD89DCE2051E5EA00A09E5C /* Foundation.framework */,
+				ECD89DCD2051E5CE00A09E5C /* libReact.a */,
+				ECD52D3E2051E127002882C1 /* libc++.tbd */,
+				ECD52D372051E0F9002882C1 /* libcxxreact.a */,
+				ECD52D382051E0F9002882C1 /* libdouble-conversion.a */,
+				ECD52D392051E0F9002882C1 /* libjschelpers.a */,
+				ECD52D3A2051E0F9002882C1 /* libjsinspector.a */,
+				ECD52D3B2051E0F9002882C1 /* libprivatedata.a */,
+				ECD52D3C2051E0F9002882C1 /* libthird-party.a */,
+				ECD52D3D2051E0F9002882C1 /* libyoga.a */,
+				ECD52D2F2051E0DD002882C1 /* libReact.a */,
+				ECD52D202051E058002882C1 /* libdouble-conversion.a */,
+				ECD52D1E2051E045002882C1 /* libcxxreact.a */,
+				ECD52D1C2051DFFC002882C1 /* libyoga.a */,
+				ECD52D172051DF1E002882C1 /* libReact.a */,
+				ECEF5C212051DDEB000A73F8 /* CoreLocation.framework */,
+				ECA0F9342051A21E003CD350 /* libReact.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -180,11 +205,16 @@
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
-				ECA22B982040615F00E05469 /* RNADBMobileModule.m */,
-				EC597A6020518E720021EBAB /* RNADBMobileModule.h */,
+				EC31B049205193FE00C6D5D8 /* RNADBMobileConfig.h */,
+				ECEF5C272051DE89000A73F8 /* RNADBMobile.h */,
+				EC31B047205193ED00C6D5D8 /* RNADBMobileConfig.m */,
+				EC31B046205193CA00C6D5D8 /* RNADBMobileAnalytics.h */,
+				EC31B044205193A900C6D5D8 /* RNADBMobileAnalytics.m */,
+				ECEF5C1A2051DDC3000A73F8 /* RNADBMobile */,
 				134814211AA4EA7D00B7C361 /* Products */,
 				EC0691252040AAE40040E4E4 /* Libraries */,
 				26D89C324E3164BDBC33E242 /* Frameworks */,
+				ECEF5C192051DDC3000A73F8 /* RNADBMobile.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -219,26 +249,48 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		ECEF5C1A2051DDC3000A73F8 /* RNADBMobile */ = {
+			isa = PBXGroup;
+			children = (
+				ECEF5C1B2051DDC3000A73F8 /* RNADBMobile.h */,
+				ECEF5C1C2051DDC4000A73F8 /* Info.plist */,
+			);
+			path = RNADBMobile;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		ECEF5C162051DDC3000A73F8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECD52D182051DF86002882C1 /* RNADBMobile.h in Headers */,
+				ECD52D192051DF8F002882C1 /* RNADBMobileConfig.h in Headers */,
+				ECD52D1A2051DF8F002882C1 /* RNADBMobileAnalytics.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
-		58B511DA1A9E6C8500147676 /* RNADBMobile */ = {
+		ECEF5C182051DDC3000A73F8 /* RNADBMobile */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "RNADBMobile" */;
+			buildConfigurationList = ECEF5C1E2051DDC4000A73F8 /* Build configuration list for PBXNativeTarget "RNADBMobile" */;
 			buildPhases = (
-				58B511D71A9E6C8500147676 /* Sources */,
-				58B511D81A9E6C8500147676 /* Frameworks */,
-				58B511D91A9E6C8500147676 /* CopyFiles */,
+				ECEF5C142051DDC3000A73F8 /* Sources */,
+				ECEF5C152051DDC3000A73F8 /* Frameworks */,
+				ECEF5C162051DDC3000A73F8 /* Headers */,
+				ECEF5C172051DDC3000A73F8 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				EC06915A2040AC0F0040E4E4 /* PBXTargetDependency */,
 			);
 			name = RNADBMobile;
-			productName = RCTDataManager;
-			productReference = 134814201AA4EA6300B7C361 /* libRNADBMobile.a */;
-			productType = "com.apple.product-type.library.static";
+			productName = RNADBMobile;
+			productReference = ECEF5C192051DDC3000A73F8 /* RNADBMobile.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -249,8 +301,9 @@
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "Work&Co";
 				TargetAttributes = {
-					58B511DA1A9E6C8500147676 = {
-						CreatedOnToolsVersion = 6.1.1;
+					ECEF5C182051DDC3000A73F8 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -272,7 +325,7 @@
 			);
 			projectRoot = "";
 			targets = (
-				58B511DA1A9E6C8500147676 /* RNADBMobile */,
+				ECEF5C182051DDC3000A73F8 /* RNADBMobile */,
 			);
 		};
 /* End PBXProject section */
@@ -392,24 +445,27 @@
 		};
 /* End PBXReferenceProxy section */
 
+/* Begin PBXResourcesBuildPhase section */
+		ECEF5C172051DDC3000A73F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		58B511D71A9E6C8500147676 /* Sources */ = {
+		ECEF5C142051DDC3000A73F8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ECA22B992040615F00E05469 /* RNADBMobileModule.m in Sources */,
+				ECEF5C252051DE2C000A73F8 /* RNADBMobileConfig.m in Sources */,
+				ECEF5C262051DE2C000A73F8 /* RNADBMobileAnalytics.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		EC06915A2040AC0F0040E4E4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = React;
-			targetProxy = EC0691592040AC0F0040E4E4 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		58B511ED1A9E6C8500147676 /* Debug */ = {
@@ -439,6 +495,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEFINES_MODULE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -456,9 +513,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"${BUILT_PRODUCTS_DIR}/../include",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-Wl,-undefined,dynamic_lookup";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -490,6 +552,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
+				DEFINES_MODULE = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -500,52 +563,91 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"${BUILT_PRODUCTS_DIR}/../include",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "-Wl,-undefined,dynamic_lookup";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		58B511F01A9E6C8500147676 /* Debug */ = {
+		ECEF5C1F2051DDC4000A73F8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					"$(SRCROOT)/../../../React/**",
-					"$(SRCROOT)/../../react-native/React/**",
-				);
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = RNADBMobile/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 				);
-				PRODUCT_NAME = RNADBMobile;
+				PRODUCT_BUNDLE_IDENTIFIER = co.work.RNADBMobile;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		58B511F11A9E6C8500147676 /* Release */ = {
+		ECEF5C202051DDC4000A73F8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					"$(SRCROOT)/../../../React/**",
-					"$(SRCROOT)/../../react-native/React/**",
-				);
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = RNADBMobile/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 				);
-				PRODUCT_NAME = RNADBMobile;
+				PRODUCT_BUNDLE_IDENTIFIER = co.work.RNADBMobile;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -561,11 +663,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "RNADBMobile" */ = {
+		ECEF5C1E2051DDC4000A73F8 /* Build configuration list for PBXNativeTarget "RNADBMobile" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				58B511F01A9E6C8500147676 /* Debug */,
-				58B511F11A9E6C8500147676 /* Release */,
+				ECEF5C1F2051DDC4000A73F8 /* Debug */,
+				ECEF5C202051DDC4000A73F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
