@@ -1,7 +1,7 @@
 PODS:
-  - AdobeMobileSDK (4.15.0):
-    - AdobeMobileSDK/iOS (= 4.15.0)
-  - AdobeMobileSDK/iOS (4.15.0)
+  - AdobeMobileSDK (4.16.1):
+    - AdobeMobileSDK/iOS (= 4.16.1)
+  - AdobeMobileSDK/iOS (4.16.1)
   - boost-for-react-native (1.63.0)
   - DoubleConversion (1.1.5)
   - Folly (2016.09.26.00):
@@ -44,7 +44,7 @@ PODS:
     - React/fishhook
     - React/RCTBlob
   - RNADBMobile (0.1.0):
-    - AdobeMobileSDK (~> 4.15)
+    - AdobeMobileSDK (~> 4.16.1)
     - React
   - yoga (0.53.3.React)
 
@@ -77,15 +77,15 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
 SPEC CHECKSUMS:
-  AdobeMobileSDK: 7fd5a52302bcbb2ad24c6fb6ef4d1f58e0d654e3
+  AdobeMobileSDK: a11781b128636206f5a47949e06e2bd160b55e93
   boost-for-react-native: 39c7adb57c4e60d6c5479dd8623128eb5b3f0f2c
   DoubleConversion: e22e0762848812a87afd67ffda3998d9ef29170c
   Folly: 211775e49d8da0ca658aebc8eab89d642935755c
   glog: 1de0bb937dccdc981596d3b5825ebfb765017ded
   React: af66244a7d630be2aef03b4ddfe3570e4eff39fc
-  RNADBMobile: fb659edfd55fb88e85659d52e890a89e78de2120
+  RNADBMobile: 0fc2017a63f2a030a309b53efb82aeecfc9fbded
   yoga: 55da126afc384965b96bff46652464373b330add
 
 PODFILE CHECKSUM: a7d24dc18edf53a67579e50f311669b643f40d4c
 
-COCOAPODS: 1.5.2
+COCOAPODS: 1.5.3

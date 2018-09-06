@@ -4555,7 +4555,7 @@ react-devtools-core@3.0.0:
 
 react-native-adbmobile@workco/react-native-adbmobile:
   version "0.1.0"
-  resolved "https://github.com/workco/react-native-adbmobile.git#f3e5a1ca4e86a0ea76c9749af98d9dd59ca99606"
+  resolved "https://github.com/workco/react-native-adbmobile.git#ea909ebb6570371a8b1d2377319ab00e26bce411"
 
 react-native@0.53.3:
   version "0.53.3"
