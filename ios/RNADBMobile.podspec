@@ -19,5 +19,5 @@ Pod::Spec.new do |s|
   s.frameworks   = "CoreLocation"
 
   s.dependency     "React"
-  s.dependency     "AdobeMobileSDK", "~> 4.15"
+  s.dependency     "AdobeMobileSDK", "~> 4.16.1"
 end

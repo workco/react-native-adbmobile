@@ -1,7 +1,7 @@
 
 buildscript {
     ext.kotlin_version = '1.2.21'
-    ext.adobe_mobile_version = '4.14.0'
+    ext.adobe_mobile_version = '4.16.1'
 
     repositories {
         jcenter()
