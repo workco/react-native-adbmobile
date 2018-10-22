@@ -85,6 +85,14 @@ export default function(): React.Node {
         title="pause collect lifecycle data"
         action={Config.pauseCollectingLifecycleData}
       />
+      <ButtonItem
+        title="set advertising identifier: 'abc'"
+        action={(): void => Config.setAdvertisingIdentifier('abc')}
+      />
+      <ButtonItem
+        title="set advertising identifier: null (auto)"
+        action={(): void => Config.setAdvertisingIdentifier()}
+      />
     </Group>
   );
 }
