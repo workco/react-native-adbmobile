@@ -10,6 +10,7 @@
 		ECD52D182051DF86002882C1 /* RNADBMobile.h in Headers */ = {isa = PBXBuildFile; fileRef = ECEF5C272051DE89000A73F8 /* RNADBMobile.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		ECD52D192051DF8F002882C1 /* RNADBMobileConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = EC31B049205193FE00C6D5D8 /* RNADBMobileConfig.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		ECD52D1A2051DF8F002882C1 /* RNADBMobileAnalytics.h in Headers */ = {isa = PBXBuildFile; fileRef = EC31B046205193CA00C6D5D8 /* RNADBMobileAnalytics.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		ECDF4B44217E626400FEE934 /* RNADBMobileVisitor.m in Sources */ = {isa = PBXBuildFile; fileRef = ECDF4B43217E626400FEE934 /* RNADBMobileVisitor.m */; };
 		ECEF5C252051DE2C000A73F8 /* RNADBMobileConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = EC31B047205193ED00C6D5D8 /* RNADBMobileConfig.m */; };
 		ECEF5C262051DE2C000A73F8 /* RNADBMobileAnalytics.m in Sources */ = {isa = PBXBuildFile; fileRef = EC31B044205193A900C6D5D8 /* RNADBMobileAnalytics.m */; };
 /* End PBXBuildFile section */
@@ -152,6 +153,8 @@
 		ECD89DCD2051E5CE00A09E5C /* libReact.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libReact.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECD89DCE2051E5EA00A09E5C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		ECD89DD12051E69200A09E5C /* libcxxreact.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libcxxreact.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECDF4B42217E620000FEE934 /* RNADBMobileVisitor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNADBMobileVisitor.h; sourceTree = "<group>"; };
+		ECDF4B43217E626400FEE934 /* RNADBMobileVisitor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNADBMobileVisitor.m; sourceTree = "<group>"; };
 		ECEF5C192051DDC3000A73F8 /* RNADBMobile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RNADBMobile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECEF5C1B2051DDC3000A73F8 /* RNADBMobile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNADBMobile.h; sourceTree = "<group>"; };
 		ECEF5C1C2051DDC4000A73F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -205,6 +208,8 @@
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
+				ECDF4B43217E626400FEE934 /* RNADBMobileVisitor.m */,
+				ECDF4B42217E620000FEE934 /* RNADBMobileVisitor.h */,
 				EC31B049205193FE00C6D5D8 /* RNADBMobileConfig.h */,
 				ECEF5C272051DE89000A73F8 /* RNADBMobile.h */,
 				EC31B047205193ED00C6D5D8 /* RNADBMobileConfig.m */,
@@ -462,6 +467,7 @@
 			files = (
 				ECEF5C252051DE2C000A73F8 /* RNADBMobileConfig.m in Sources */,
 				ECEF5C262051DE2C000A73F8 /* RNADBMobileAnalytics.m in Sources */,
+				ECDF4B44217E626400FEE934 /* RNADBMobileVisitor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
