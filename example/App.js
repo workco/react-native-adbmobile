@@ -9,6 +9,7 @@ import { StyleSheet, ScrollView, Text, View } from 'react-native';
 
 import Config from './Config';
 import Analytics from './Analytics';
+import Visitor from './Visitor';
 
 const styles = StyleSheet.create({
   container: {
@@ -35,6 +36,7 @@ export default class App extends React.Component<Props> {
         </Text>
         <Config />
         <Analytics />
+        <Visitor />
       </ScrollView>
     );
   }
