@@ -20,6 +20,7 @@ class RNADBMobilePackage : ReactPackage {
 
         modules.add(RNADBMobileConfig(reactContext))
         modules.add(RNADBMobileAnalytics(reactContext))
+        modules.add(RNADBMobileVisitor(reactContext))
 
         return modules
     }
