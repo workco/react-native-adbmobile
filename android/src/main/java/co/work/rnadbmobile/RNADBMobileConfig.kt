@@ -105,4 +105,7 @@ class RNADBMobileConfig(reactContext: ReactApplicationContext) : ReactContextBas
             Config.setLargeIconResourceId(resourcesMap.getInt("large"))
         }
     }
+
+    @ReactMethod
+    fun setAdvertisingIdentifier(idfa: String? = null) {}
 }

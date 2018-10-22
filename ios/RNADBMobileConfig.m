@@ -1,5 +1,6 @@
 #import "RNADBMobileConfig.h"
 #import "ADBMobile.h"
+#import <AdSupport/ASIdentifierManager.h>
 
 @implementation RNADBMobileConfig
 
@@ -121,6 +122,14 @@ RCT_EXPORT_METHOD(pauseCollectingLifecycleData)
 RCT_EXPORT_METHOD(setIconResourceIds:(nonnull NSDictionary*)resourcesMap)
 {
     NSLog(@"setIconResourceIds(%@) not supported on iOS", resourcesMap);
+}
+
+RCT_EXPORT_METHOD(setAdvertisingIdentifier:(nullable NSString *)idfa)
+{
+    if (idfa == nil || [idfa length] == 0) {
+        idfa = [[[ASIdentifierManager sharedManager] advertisingIdentifier] UUIDString];
+    }
+    [ADBMobile setAdvertisingIdentifier:idfa];
 }
 
 @end

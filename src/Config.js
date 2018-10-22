@@ -97,4 +97,15 @@ export class Config {
   static setIconResourceIds(resourcesMap: { large?: number, small?: number }) {
     Native.setIconResourceIds(resourcesMap);
   }
+
+  // Sets the IDFA in the SDK. If the IDFA has been set in the SDK, the IDFA will be sent in lifecycle.
+  // Tip: Retrieve the IDFA from Apple APIs only if you are using an ad service.
+  // If you retrieve IDFA, and are not using it properly, your app might be rejected.
+  //
+  // Passing "idfa = null" will use it automatically from ASIdentifierManager
+  //
+  // iOS-only
+  static setAdvertisingIdentifier(idfa: ?string = null) {
+    Native.setAdvertisingIdentifier(idfa);
+  }
 }
