@@ -47,7 +47,8 @@ export default class GetterItem extends React.Component<Props, State> {
     this.setState({ loading: true });
     this.props.getter().then((contents: Value) => {
       this.setState({
-        contents: contents === null ? '' : String(contents),
+        contents:
+          contents === null ? '' : JSON.stringify(contents, undefined, 2),
         loading: false,
       });
     });
