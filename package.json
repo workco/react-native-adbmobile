@@ -1,9 +1,8 @@
 {
   "name": "react-native-adbmobile",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "repository": "https://github.com/workco/react-native-adbmobile",
   "license": "MIT",
-  "private": true,
   "description": "React-Native support for ADBMobile (Adobe Mobile Services)",
   "author": "Gustavo Sverzut Barbieri <barbieri@work.co>",
   "main": "lib/index.js",
