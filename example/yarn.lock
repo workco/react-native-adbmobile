@@ -5257,9 +5257,10 @@ react-devtools-core@3.0.0:
     shell-quote "^1.6.1"
     ws "^2.0.3"
 
-react-native-adbmobile@workco/react-native-adbmobile:
-  version "0.1.0"
-  resolved "https://codeload.github.com/workco/react-native-adbmobile/tar.gz/d000b069ba906e222f321dea6263cf0188542d42"
+react-native-adbmobile@^0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/react-native-adbmobile/-/react-native-adbmobile-0.3.0.tgz#9e9ff1fd03b8d583b53789aa2cddc797456ef8fe"
+  integrity sha512-ai8VCOMuSuxB5ZQXaG/D8upWeEVK+UyNigoy19fYejY053/TD1XkSP7TqF4gHAJZmmtTV5H5pqAl17t7SsrxNQ==
 
 react-native@0.53.3:
   version "0.53.3"

@@ -43,7 +43,7 @@ PODS:
     - React/Core
     - React/fishhook
     - React/RCTBlob
-  - RNADBMobile (0.1.0):
+  - RNADBMobile (0.3.0):
     - AdobeMobileSDK (~> 4.16.1)
     - React
   - yoga (0.53.3.React)
