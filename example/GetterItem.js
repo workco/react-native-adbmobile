@@ -43,14 +43,19 @@ export default class GetterItem extends React.Component<Props, State> {
     return <Text style={styles.itemContents}>{this.state.contents}</Text>;
   }
 
-  callGetter = () => {
+  callGetter = async (): Promise<void> => {
     this.setState({ loading: true });
-    this.props.getter().then((contents: Value) => {
-      this.setState({
-        contents:
-          contents === null ? '' : JSON.stringify(contents, undefined, 2),
-        loading: false,
-      });
+    let contents: string;
+    try {
+      const result = await this.props.getter();
+      contents = JSON.stringify(result, undefined, 2);
+    } catch (e) {
+      contents = `ERROR: ${e.message}`;
+    }
+
+    this.setState({
+      contents,
+      loading: false,
     });
   };
 
