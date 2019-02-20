@@ -40,6 +40,9 @@ class RNADBMobileAnalytics(reactContext: ReactApplicationContext) : ReactContext
     }
 
     @ReactMethod
+    fun trackAdobeDeepLink(url: String) {}
+
+    @ReactMethod
     fun trackLocation(coordinates: ReadableMap, contextData: ReadableMap? = null) {
         val location = Location("")
 

@@ -28,6 +28,12 @@ RCT_EXPORT_METHOD(trackAction:(nonnull NSString *)action contextData:(NSDictiona
     [ADBMobile trackAction:action data:contextData];
 }
 
+RCT_EXPORT_METHOD(trackAdobeDeepLink:(nonnull NSString *)url)
+{
+    NSURL *urlToTrack = [NSURL URLWithString:url];
+    [ADBMobile trackAdobeDeepLink:urlToTrack];
+}
+
 RCT_EXPORT_METHOD(trackLocation:(NSDictionary *)coordinatesSpec contextData:(NSDictionary *)contextData)
 {
     id objLat = coordinatesSpec[@"latitude"];

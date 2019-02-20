@@ -75,6 +75,11 @@ export class Analytics {
     Native.trackAction(action, contextData || null);
   }
 
+  // iOS-only
+  static trackAdobeDeepLink(url: string) {
+    Native.trackAdobeDeepLink(url);
+  }
+
   static trackLocation(coordinates: Coordinates, contextData?: ContextData) {
     Native.trackLocation(coordinates, contextData || null);
   }
