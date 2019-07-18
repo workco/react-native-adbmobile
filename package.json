@@ -24,8 +24,7 @@
     "prepare": "rm -fr lib flow && mkdir lib flow && babel src/ -d lib/"
   },
   "peerDependencies": {
-    "react": "^16.2.0",
-    "react-native": "^0.53.3"
+    "react": "^16.2.0"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
@@ -47,7 +46,6 @@
     "flow-bin": "^0.66.0",
     "flow-typed": "^2.3.0",
     "prettier": "^1.10.2",
-    "react": "^16.2.0",
-    "react-native": "^0.53.3"
+    "react": "^16.2.0"
   }
 }
